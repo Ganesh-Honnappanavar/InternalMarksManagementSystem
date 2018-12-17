@@ -1,0 +1,58 @@
+
+{% load bootstrap3 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    {% bootstrap_css %}
+    <link rel="stylesheet" type="text/css" href="{% static '1.css' %}">
+    <script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+  </head>
+  <body>
+      <!-- navigation bar -->
+     <div class="cover">
+
+
+         <nav>
+             <div id="title" > <b> Government Engineering College</b>  </div>
+               <ul>
+                 <li> <a href="{% url 'app:home' %}">HOME</a> </li>
+                 <li> <a href="#">ABOUT</a> </li>
+                 <li> <a href="{% url 'app:internals' %}">Internals</a> </li>
+                 <li> <a href="#">CONTACT</a> </li>
+                 <!-- <li> <a class="active" href="#">LOG IN</a> </li> -->
+               </ul>
+         </nav>
+     </div>
+         <!-- background Image -->
+               <div >
+
+                    <section class="sec1">
+
+                    </section>
+                 </div>
+
+        <!-- welcome head and its content -->
+        <marquee  width="" direction="left" height="">
+          <p class='notifiy'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </marquee>
+
+         <section class="content">
+              <h1 id="welcomeHead"> <b>Welcome</b> </h1>
+              <hr width="50%" >
+              <p>Government Engineering College, Haveri was established in the year 2007 by Government of Karnataka with the sole intention of imparting technical education to the rural mass and down troddens at reasonably cheaper rate so that it can elevate the life standards of rural people. The dream of Govt. of Karnataka is well realized through structured efforts putforth by a dedicated team of the institution.</p>
+              <p> Government Engineering College, Haveri which comes under the administration of Director of Technical Education Bangalore is affiliated to VTU Belgaum and is recognised by AICTE New Delhi. The college is offering four under graduate courses in Civil Engineering, Mechanical Engineering, Electronics and Communication Engineering, Computer Science and Engineering with intake of 60 in each course. In 2011, the college has started post graduate course in Structural Engineering with an intake of 18 as VTU extension center. Department of Civil Engineering is also recognised as research center to carry out various researches which leads to Ph.D degree.</p>
+              <p>
+              The college has dedicated, well qualified, sincere and student friendly staff who are putting their heart and soul in their teaching and are giving the best to the student community. Office staff are joining their hands in the developmental activities of the college. Most of the laboratories are well developed with basic facilities and few are under developmental stage. New ladies hostel and staff quarters are under construction.
+
+              The college is situated on a small hillock of 33 acres land and is sarrounded by many water bodies in a village called Devagiri which is 10km from Haveri town. District Commissioner office is nearby to the college. Sorrounding greenary fills enthusiasm and energy in the minds of the students. The silent and serene environment of the college makes it an ideal temple for learning.</p>
+​​           </section>
+
+  </body>
+</html>

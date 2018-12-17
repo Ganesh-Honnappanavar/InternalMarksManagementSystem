@@ -1,0 +1,37 @@
+<div class="container" align="center" >
+
+
+  {% if  topicss %}
+
+
+  <h1>Assigned Subjects</h1>
+  <table border="1px">
+    <tr>
+       <th>SUBJECT CODE</th> <th>Subject Name</th> <th>Semister</th>
+    </tr>
+    {% for topic in topicss %}
+
+        <tr>
+
+     <td>{{topic.subcode}}</td>
+                <td>
+                                <li> <a href="{% url 'app:iamarks' topic.subcode%}">
+
+                    {{topic.title}}</td>
+             </a></li>
+            <td>{{topic.SEM}}</td>
+
+        </tr>
+
+
+
+
+
+  {% endfor %}
+
+    </table>
+
+
+  {% endif %}
+
+</div>

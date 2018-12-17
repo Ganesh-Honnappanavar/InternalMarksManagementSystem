@@ -1,0 +1,30 @@
+
+{% load bootstrap3 %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      {% bootstrap_css %}
+  </head>
+  <body>
+
+
+    <div align='center' text-glyphicon-resize-full class="container">
+      <div class="col-sm-6">
+        <h3 class="page-header">Login Page</h3>
+        <form class="form" action="{% url 'users:login' %}" method="post">
+          {% csrf_token %}
+          {% bootstrap_form form %}
+          {% buttons %}
+          <button type="submit" name="submit" class="btn btn-success">Login Here</button>
+          {% endbuttons %}
+        <input type="hidden" name="next" value="{% url 'app:internals' %}">
+
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>

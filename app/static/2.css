@@ -1,0 +1,119 @@
+section.sec1{
+  width: 100%;
+  height: 100vh;
+  background: url(images/pexels-photo-1119792.jpeg);
+  background-size: cover;
+  background-position: center;
+
+
+}
+#title{
+  position:fixed;
+  /* height: 80px; */
+  /* width: 100%; */
+  padding:  0px 00px 00px 150px;
+  /* box-sizing: content-box; */
+  /* float:center; */
+  font-weight: lighter;
+  color: brown;
+  /* font-style:italic; */
+  font-family: monospace;
+  font-size: 60px;
+}
+
+
+.box {
+
+    width: 100px;
+    margin: 100px 50px 300px 0px;
+}
+
+/* .shape1{
+    position: relative;
+    height: 600px;
+    width: 600px;
+    background-color: #0074d9;
+    border-radius: 90px;
+    float: right;
+    margin-right: 150px;
+} */
+/* .shape2 {
+    position: relative;
+    height: 550px;
+    width: 550px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    margin-top: -30px;
+    float: left;
+}
+.shape3 {
+    position: relative;
+    height: 350px;
+    width: 350px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    margin-top: -30px;
+    float: left;
+    margin-left: -31px;
+}
+.shape4 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    margin-top: -25px;
+    float: left;
+    margin-left: -32px;
+}
+.shape5 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    float: left;
+    margin-right: -48px;
+    margin-left: -32px;
+    margin-top: -30px;
+}
+.shape6 {
+    position: relative;
+    height: 550px;
+    width: 550px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    float: left;
+    margin-right: -20px;
+    margin-top: -35px;
+}
+.shape7 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #0074d9;
+    border-radius: 80px;
+    float: left;
+    margin-right: -20px;
+    margin-top: -57px;
+} */
+.float {
+    position: absolute;
+    z-index: 2;
+    padding: 0px;
+}
+#text{
+  color:#0074d9;
+  padding: 0px;
+  /* font-size: 40px; */
+}
+#textHeader{
+  font-size: 30px;
+  padding: 50px;
+}
+
+.form {
+    margin-right: 50px;
+    float:left;
+    padding: 0px;
+}

@@ -1,0 +1,35 @@
+
+<div class="container" align="center" >
+  {% if  topicss %}
+
+
+  <h1>Internals Marks</h1>
+  <table border="1px">
+    <tr>
+      <th>USN</th> <th>SUBJECT CODE</th> <th>SEMISTER</th> <th>Internals 1</th> <th>Internals 2</th> <th>Internals 3</th> <th>Average</th>
+    </tr>
+    {% for topic in topicss %}
+
+        <tr>
+
+     <td>{{topic.usnIA}}</td> <td>{{topic.sub_code}}</td> <td>{{topic.SEM}}</td> <td>{{topic.t1}}</td> <td>{{topic.t2}}</td> <td>{{topic.t3}}</td>
+      <td>
+      {{ topic.average }}
+
+      </td>
+        </tr>
+
+
+
+
+  {% endfor %}
+
+    </table>
+  {% else %}
+  <h1>No Marks List created yet </h1>
+
+
+  {% endif %}
+      <h1> <a href="{% url 'app:newentry'  %}" >New Entry </a>  </h1>
+
+</div>

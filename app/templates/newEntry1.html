@@ -1,0 +1,14 @@
+
+{% load bootstrap3 %}
+
+    {% bootstrap_css%}
+<h1 align="center"> Update Marks </h1>
+<div class="container">
+  <form class="form" action="{%url 'app:newentry1' topicss.subcode  %}" method="post">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+    <button type="submit" name="submit" class="btn btn-primary"> Create New</button>
+    {% endbuttons %}
+  </form>
+</div>
